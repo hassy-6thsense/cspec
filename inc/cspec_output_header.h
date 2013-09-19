@@ -9,8 +9,8 @@
  *
  */
 
-#ifndef CSPEC_OUTPUT_Header_H
-#define CSPEC_OUTPUT_Header_H
+#ifndef CSPEC_OUTPUT_HEADER_H
+#define CSPEC_OUTPUT_HEADER_H
 
 #include "cspec_output.h"
 
