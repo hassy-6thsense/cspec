@@ -2,10 +2,11 @@
 # Process this file with autoconf to produce a configure script.
 
 AC_PREREQ(2.59)
-AC_INIT(cspec, 0.3.0-snapshot, quanyangyi0323@gmail.com)
+AC_INIT([cspec], [0.3.0-snapshot], [hassy.6thsense@gmail.com])
 AC_CONFIG_SRCDIR([src/cspec_output.c])
 AC_CONFIG_HEADER([config.h])
-AM_INIT_AUTOMAKE
+AM_INIT_AUTOMAKE([-Wall -Werror foreign])
+AM_PROG_AR
 
 AC_ARG_ENABLE(debug,
 [  --enable-debug          turn on debugging],
