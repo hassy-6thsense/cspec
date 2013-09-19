@@ -1,20 +1,20 @@
-CFLAGS = -Wall
+AM_CFLAGS = -Wall
 
 if DEBUG
-CFLAGS += -g
+AM_CFLAGS += -g
 else
-CFLAGS += -DNDEBUG -O2
+AM_CFLAGS += -DNDEBUG -O2
 endif
 
 if PROFILE
-CFLAGS += -pg
+AM_CFLAGS += -pg
 endif
 
 if COVERAGE
-CFLAGS += -fprofile-arcs -ftest-coverage
+AM_CFLAGS += -fprofile-arcs -ftest-coverage
 endif
 
-INCLUDES	=	-I$(top_srcdir)/inc
+AM_CPPFLAGS	=	-I$(top_srcdir)/inc
 
 TESTS	=	spec
 check_PROGRAMS	=	$(TESTS)
